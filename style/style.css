@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: linear-gradient(rgba(6, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://img.freepik.com/fotos-premium/fondo-hd-personas-concierto-musica_410516-15995.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #fffdfc;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #fffdfc;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    /* Corregir la sintaxis del :hover */
+    color: #b05858;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-conten {
+    text-align: center;
+}
+
+.header-conten h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #f9fafa;
+    margin-bottom: 35px;
+}
+
+.header-conten p {
+    font-size: 16px;
+    color: #91caca;
+    padding: 0 250px;
+    margin-bottom: 25px;
+    /* Ajustar el margen */
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: #f0eae6;
+    color: #8574eb;
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+    background-color: #6f7165;
+}
+
+.son {
+    padding: 100px 0;
+    background-color: #edf1f4;
+    position: relative;
+}
+
+.son-content {
+    text-align: center;
+}
+
+.son-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p {
+    font-size: 16px;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+.son-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.con-1 {
+    padding: 0 25px;
+}
+
+.con-1 img {
+    width: 200%;
+    /* Considera si realmente deseas que la imagen esté en posición absoluta */
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+.con-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.son-1 h3 {
+    color: #323337;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.services {
+    background-image: linear-gradient(rgba(6, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://watermark.lovepik.com/photo/20211124/large/lovepik-concert-live-picture_500926738.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.services-content {
+    text-align: center;
+}
+
+.services-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #f9fafa;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.services-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.services-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.services-1 {
+    padding: 0 100px;
+}
+
+.services-1 img {
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+.services-1 h3 {
+    color: #eaccb3;
+    font-size: 18px;
+}
+
+.general1 {
+    display: flex;
+}
+
+.general1-1 {
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #e1e2e6;
+}
+
+.general1-2 {
+    background-image: url(./imagenes/dua\ lipa.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.general1-3 {
+    background-image: url(./imagenes/dua\ lipa.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 25px 0;
+}
+
+.blok p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.blok-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.blok-1 {
+    width: calc(33.333% - 20px);
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.blok-1:hover {
+    transform: translateY(-5px);
+}
+
+.blok-1 img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.blok-1 h3 {
+    font-size: 20px;
+    color: #323337;
+    margin-bottom: 10px;
+}
+
+.blok-1 p {
+    font-size: 14px;
+    color: #555;
+}
+
+.footer {
+    padding: 100px 0;
+    background-color: #01040f;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer h3 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 15px
+}
+
+.link a {
+    font-size: 16px;
+    color: #c5c5c5;
+    display: block;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 991px) {
+    menu {
+        padding: 30px;
+    }
+
+    .menu-label {
+        display: initial;
+    }
+
+    .menu-navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        display: none;
+    }
+
+    .menu-navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: Ovh;
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-content p {
+        padding: 0;
+    }
+
+    .son {
+        padding: 30px;
+    }
+
+    .son-content h2 {
+        padding: 0;
+    }
+
+    .txt-p {
+        padding: 0;
+    }
+
+    .son-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .son-img {
+        display: none;
+    }
+
+    .services {
+        padding: 30px;
+    }
+
+    .services-content p {
+        padding: 0;
+    }
+
+    .services-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .services-1 {
+        margin-bottom: 25px;
+    }
+
+    .general1 {
+        flex-direction: column;
+    }
+
+    .general1-1 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .general1-2,
+    .general1-3 {
+        display: none;
+    }
+
+    .blog {
+        padding: 30px;
+    }
+
+    .blog-content {
+        flex-direction: column;
+    }
+
+    .blok-1 {
+        padding: 0;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
