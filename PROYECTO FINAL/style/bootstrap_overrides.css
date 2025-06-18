@@ -1,0 +1,154 @@
+/* Overrides for .son-group and .son-item */
+.son-group {
+    display: flex !important; /* Override if Bootstrap's .row is not taking over */
+    flex-wrap: wrap !important; /* Ensure wrapping for Bootstrap columns */
+    justify-content: space-around !important; /* Example, adjust as needed or remove if Bootstrap handles it */
+}
+/* Ensure .son-item does not have fixed widths that conflict with col-* classes */
+.son-item {
+    width: auto !important; /* Allow Bootstrap columns to dictate width */
+    flex-basis: auto !important; /* Allow Bootstrap columns to dictate flex basis */
+}
+
+/* Overrides for .services-group and .services-1 */
+.services-group {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-around !important;
+}
+.services-1 {
+    width: auto !important;
+    flex-basis: auto !important;
+    /* Keep useful padding, but remove layout-specific padding if it conflicts */
+    padding: 15px !important; /* Example, adjust as needed */
+}
+
+/* Overrides for .blok-content and .blok-1 */
+.blok-content {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-around !important;
+}
+.blok-1 {
+    width: auto !important; /* This was calc(33.333% - 20px) */
+    flex-basis: auto !important;
+    /* Keep other styles like background, border, padding, box-shadow */
+    margin-bottom: 20px !important; /* Example of keeping a useful style */
+}
+
+/* Global CSS Corrections from style.css */
+.menu .navbar ul li a:hover {
+    color: #e9ecef !important; /* Light grey for hover */
+}
+.con-1 img {
+    width: 100% !important;
+}
+/* .son-img is removed, so no override needed if it was successfully deleted or never problematic */
+
+/* Media Query Corrections - these might be harder to apply as overrides without duplicating the whole media query.
+   If direct modification of style.css failed, these specific selector changes within media queries are challenging to do via an override sheet.
+   For now, focus on what can be overridden.
+*/
+
+/* Menu harmonization for mobile view (if #menu:checked~.navbar exists in style.css) */
+@media (max-width: 991px) {
+    #menu:checked~.navbar {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+}
+
+/* Custom Button Styles */
+.btn-primary {
+    background-color: #8574eb !important; /* Original btn-1 purple */
+    border-color: #8574eb !important; /* Match background */
+    color: #ffffff !important; /* White text for better contrast */
+    text-transform: uppercase !important; /* From original btn-1 */
+    font-weight: 600 !important;
+    padding: 0.75rem 1.5rem !important; /* Ensure good padding, similar to btn-lg */
+    border-radius: 0.3rem !important; /* Standard Bootstrap rounding */
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #6a5acd !important; /* Darker purple for hover/focus (Shade of SlateBlue) */
+    border-color: #6a5acd !important;
+    color: #ffffff !important;
+}
+
+.btn-primary:active {
+    background-color: #5548a8 !important; /* Even darker for active */
+    border-color: #5548a8 !important;
+    color: #ffffff !important;
+}
+
+/* Styling for outline buttons, if needed, for consistency */
+.btn-outline-primary {
+    border-color: #8574eb !important;
+    color: #8574eb !important;
+    text-transform: uppercase !important;
+    font-weight: 600 !important;
+    padding: 0.75rem 1.5rem !important;
+     border-radius: 0.3rem !important;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+    background-color: #8574eb !important;
+    color: #ffffff !important;
+}
+
+/* Ensure .btn-lg is consistent if we used it above */
+.btn-lg {
+    padding: 0.75rem 1.5rem !important; /* Already defined but good to be explicit if overriding */
+    font-size: 1.1rem !important; /* Slightly larger font for large buttons */
+}
+
+/* Custom JavaScript Modal Styles */
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 1050; /* Sit on top, similar to Bootstrap modals */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity - backdrop */
+    display: flex; /* Used to center modal-content */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+}
+
+.modal-content {
+    background-color: #fefefe; /* White background */
+    margin: auto; /* Auto margins for centering, complementing flex */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more specific, e.g., 500px */
+    max-width: 500px; /* Max width */
+    border-radius: 0.3rem; /* Consistent with Bootstrap */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    text-align: center; /* Center text and button inside */
+}
+
+.modal-content p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.close-btn {
+    background-color: #8574eb; /* Using the primary button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase; /* Consistent with other buttons */
+    font-weight: 600;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    background-color: #6a5acd; /* Darker shade on hover/focus */
+}
